@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: db-migration
+  namespace: appscrip
+spec:
+  template:
+    spec:
+      containers:
+      - name: migration
+        image: baniprasad1999/appscrip-migration:12
+        imagePullPolicy: Always
+        env:
+        - name: MONGODB_URI
+          value: "mongodb://mongodb-service:27017/appscrip"
+      restartPolicy: OnFailure

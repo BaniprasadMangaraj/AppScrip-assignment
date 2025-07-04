@@ -1,0 +1,7 @@
+[dev_servers]
+server1 ansible_host=176.34.71.76
+
+[dev_servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/baniprasad/.ssh/terra-ansible-multienv-key
+ansible_python_interpreter=/usr/bin/python3

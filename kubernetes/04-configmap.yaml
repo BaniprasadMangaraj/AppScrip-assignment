@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: appscrip-config
+  namespace: appscrip
+data:
+  MONGODB_URI: "mongodb://mongodb-service:27017/appscrip"
+  NODE_ENV: "production"
+  NEXT_PUBLIC_API_URL: "https://appscrip.nextversetech.site/api"
+  NEXTAUTH_URL: "https://appscrip.nextversetech.site/"
+  NEXTAUTH_SECRET: "HmaFjYZ2jbUK7Ef+wZrBiJei4ZNGBAJ5IdiOGAyQegw="
+  JWT_SECRET: "e5e425764a34a2117ec2028bd53d6f1388e7b90aeae9fa7735f2469ea3a6cc8c"
+
+
+#This is a demo configuration to add a ConfigMap for the Appscrip application using MongoDB.
